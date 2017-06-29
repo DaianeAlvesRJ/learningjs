@@ -28,3 +28,11 @@ var user = {
 //implementar funcao para adicionar nome
 //implementar funcao para adicionar login
 //implementar funcao para adicionar idade
+function setAge(user, age) {
+    user.age = age
+}
+
+//Adicionando idade no usuario
+setAge(user, 27)
+
+console.log(user)
