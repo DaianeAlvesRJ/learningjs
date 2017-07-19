@@ -1,5 +1,7 @@
 'use strict';
-
+var turma = {
+    alunos: []
+}
 var aluno = {
     nome:null,
     idade: null,
@@ -10,12 +12,14 @@ var aluno = {
           prova1:null, 
           prova2:null, 
           prova3:null,
-          media:(null)
+          media:(0)
         }
     ],
     
 }
-
+function cadAlunos(aluno){
+    turma.alunos.push(aluno)
+}
 function setName(nome){
     aluno.nome=nome
 }
@@ -33,11 +37,10 @@ function setProfessor(professor){
 function setNotas(nota){
     aluno.notas.push(nota)
 }
+
 setName('Fabiana Lima')
 setAge(33)
 setAno(2015)
 setProfessor('Ana Paula')
 setNotas({materia:'Java Script', prova1: 8.0, prova2:6.0, prova3: 7.0, media: 0})
-
-
 console.log(aluno)
